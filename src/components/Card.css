@@ -1,0 +1,27 @@
+.Container {
+  display: flex;
+  margin-left: 225px;
+  margin-top: 180px;
+}
+.Card1 {
+  height: 200px;
+  width: 400px;
+  background-color: rgb(145, 145, 214);
+  border-radius: 20px;
+}
+.Card1-change {
+  height: 200px;
+  width: 400px;
+  background-color: rgb(180, 218, 179);
+  border-radius: 20px;
+}
+.Card-p {
+  margin-top: 80px;
+  font-weight: 300px;
+  color: white;
+}
+.Card-p1 {
+  margin-top: 80px;
+  font-weight: 300px;
+  color: rgb(15, 22, 218);
+}
