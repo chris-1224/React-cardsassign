@@ -3,10 +3,16 @@ import "../components/Card.css";
 //import "./App.css";
 
 function Card() {
-  const [active, changeColor] = useState(true);
+  const [isActive, changeColor] = useState(true);
 
   function changeCard1Color() {
     changeColor((current) => !current);
+  }
+
+  const [active, changeColor1] = useState(true);
+
+  function changeCard2Color() {
+    changeColor1((current) => !current);
   }
 
   return (
@@ -22,11 +28,11 @@ function Card() {
       </div>
 
       <div
-        className={active ? "Card1-change" : "Card1"}
-        onClick={changeCard1Color}
+        className={isActive ? "Card1-change" : "Card1"}
+        onClick={changeCard2Color}
       >
         <h2> Card 2</h2>
-        <p className={active ? "Card-p1" : "Card-p"}>
+        <p className={isActive ? "Card-p1" : "Card-p"}>
           Click here to see the change
         </p>
       </div>
